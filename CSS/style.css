@@ -5,12 +5,36 @@ body{
 	background-color:#add8e6;
 	background-image: linear-gradient(#add8e6,red, orange, yellow, green, #003366);
 }
+@media only screen and (min-width: 824px) {
+	li{
+		padding-left:30%;
+		text-align:right;
+		margin: 8%;
+	}
+}
+@media only screen and (max-width: 825px) {
+	li{
+		list-style-type: none;
+	}
+}
 header nav{
 	float:right;
 	margin-top:10px;
 }
 .EdHome{
-	width:80%;
+	width:85%;
 	margin:auto;
 	overflow:hidden;
+}
+
+.images{
+	vertical-align: middle;
+	float:right;
+}
+	
+ul.images li{
+	font:18px/2.5;
+	vertical-align: middle;
+	display: inline-block;
+	margin: 8%;
 }
