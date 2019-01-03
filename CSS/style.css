@@ -12,7 +12,7 @@ body{
 		margin: 8%;
 	}
 	.Spotify{
-		width:18%;
+		width:19%;
 	}
 }
 @media only screen and (max-width: 825px) {
@@ -20,7 +20,7 @@ body{
 		list-style-type: none;
 	}
 	.Spotify{
-		width:48%;
+		width:49%;
 	}
 }
 header nav{
