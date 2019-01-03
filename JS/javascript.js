@@ -1,8 +1,3 @@
-function myFunction() {
-	var SpotifyLink = $('#SpotifyLink').val();
-	alert(SpotifyLink)
-	return SpotifyLink;
-}
 var channelID = "UC0C-w0YjGpqDXGB8IHb662A";
 var reqURL = "https://www.youtube.com/feeds/videos.xml?channel_id=";
 $.getJSON("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(reqURL)+channelID,
