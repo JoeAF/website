@@ -4,7 +4,23 @@
 	  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
       <title>Login/SignUp</title>
 	  <link rel="stylesheet" href="CSS/style.css">
-	  <script src="JS/javascript.js"></script> 
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	  <script src="JS/javascript.js"></script> 
   </head>
+  <body class = "Login">
+	<div style = "float:left;">
+	<h1>Login</h1>
+	Username: <input type="text" id="LoginUsername" value = ""/><br>
+	Password: <input type="text" id="LoginPassword" value = ""/><br>
+	<button onclick="Login()">Login</button>
+	</div>
+	<div style = "float:right;">
+	<h1>SignUp</h1>
+	Username: <input type="text" id="SignUpUsername" value = ""/><br>
+	Password: <input type="text" id="SignUpPassword" value = ""/><br>
+	Email: <input type="text" id="Email" value = ""/><br>
+	Postcode: <input type="text" id="Postcode" value = ""/><br>
+	<button onclick="SignUp()">SignUp</button>
+	</div>
+	<div id="User"></div>
+  </body>
