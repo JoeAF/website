@@ -1,9 +1,29 @@
-body{
+.Home{
 	font: 18px/1.5 Arial, Helvetica, sans-serif;
 	padding:0;
 	margin: 5px;
 	background-color:#add8e6;
 	background-image: linear-gradient(#add8e6,red, orange, yellow, green, #003366);
+}
+.Clothes{
+	font: 18px/1.5 Arial, Helvetica, sans-serif;
+	padding:0;
+	margin: 5px;
+	background-color:#add8e6;
+	background-image: linear-gradient(#add8e6,red, orange, yellow, green, #003366);
+}
+.Videos{
+	font: 18px/1.5 Arial, Helvetica, sans-serif;
+	padding:0;
+	margin: 5px;
+	background-color:#add8e6;
+	background-image: linear-gradient(#add8e6,red, orange, yellow, green, #003366);
+}
+.Login{
+	font: 18px/1.5 Arial, Helvetica, sans-serif;
+	padding:0;
+	margin: 5px;
+	background-color:white;
 }
 @media only screen and (min-width: 824px) {
 	li{
@@ -44,3 +64,5 @@ ul.images li{
 	display: inline-block;
 	margin: 8%;
 }
+h1{
+font: 30px/1.5 Arial, Helvetica, sans-serif;}
