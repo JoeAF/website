@@ -27,37 +27,123 @@ function(data) {
 var LoggedIn = false;
 function Login() {
 	 if(LoggedIn==false){
-     var inputUsername= document.getElementById("LoginUsername");
-     var inputPassword= document.getElementById("LoginPassword");
-	 console.log(inputUsername.value);
-	 if ((inputUsername.value == localStorage.getItem('Username')) && (inputPassword.value == localStorage.getItem('Password'))){
-		 LoggedIn = true;
-		 console.log("You have been logged in!");}
-	 }
-	 else{alert("You must log out first");)
+		 var inputUsername= document.getElementById("LoginUsername");
+		 var inputPassword= document.getElementById("LoginPassword");
+		 console.log(inputUsername.value);
+		 if ((inputUsername.value == localStorage.getItem('Username')) && (inputPassword.value == localStorage.getItem('Password'))){
+			 LoggedIn = true;
+			 alert("You have been logged in! Your item is on the way.");}
+		 else{alert("Incorrect details have been entered!")}
+		 }
+	 else{alert("You must log out first");}
     };
 
 function SignUp() {
 	 if(LoggedIn==false){
-     var inputUsername= document.getElementById("SignUpUsername");
-     var inputPassword= document.getElementById("SignUpPassword");
-	 if((inputPassword.value).length<8){
-	 alert("Password must be at least 8 charachers long!")
-	 }
-	 else{
-		 if(inputUsername.value == localStorage.getItem('Username')){
-			alert("Error");
+		 var inputUsername= document.getElementById("SignUpUsername");
+		 var inputPassword= document.getElementById("SignUpPassword");
+		 if((inputPassword.value).length<8){
+		 alert("Password must be at least 8 charachers long!")
 		 }
 		 else{
-			 console.log(inputUsername.value);
-			 localStorage.setItem("Username", inputUsername.value);
-			 localStorage.setItem("Password", inputPassword.value);
-			 console.log(localStorage.getItem("Username"));
-			 LoggedIn = true;
-			 alert("You have signed up and have been logged in!");
-			 $('#User').html('<p>'+inputUsername.value+'</p>');
+			 if(inputUsername.value == localStorage.getItem('Username')){
+				alert("Username already taken");
+			 }
+			 else{
+				 console.log(inputUsername.value);
+				 localStorage.setItem("Username", inputUsername.value);
+				 localStorage.setItem("Password", inputPassword.value);
+				 console.log(localStorage.getItem("Username"));
+				 LoggedIn = true;
+				 alert("You have signed up and have been logged in! Your item is on the way.");
+			 }
 		 }
 	 }
-	 }
-	 else{alert("You must log out first");)
+	 else{alert("You must log out first");}
     };
+	
+function Logout(){
+	if(LoggedIn==true){
+		alert("You have logged out");
+		LoggedIn=false;
+	}
+	else{alert("You are already logged out");}
+}
+
+function changeshirt(){
+	var colour = document.getElementById("colouroptions");
+	var logo = document.getElementById("logooptions");
+	if((colour.value!='Colour')&&(logo.value!='Logo')){
+	$('#tshirtholder').html('<img src = "Assets/'+colour.value+logo.value+'.gif" width = 38%>');
+	}
+	else{}
+}
+
+function changehoodie(){
+	var colour = document.getElementById("colouroptions2");
+	var logo = document.getElementById("logooptions2");
+	if((colour.value!='Colour')&&(logo.value!='Logo')){
+	$('#hoodiesholder').html('<img src = "Assets/'+colour.value+logo.value+'.gif" width = 38%>');
+	}
+	else{}
+}
+
+function changehat(){
+	var colour = document.getElementById("colouroptions3");
+	var logo = document.getElementById("logooptions3");
+	if((colour.value!='Colour')&&(logo.value!='Logo')){
+	$('#hatsholder').html('<img src = "Assets/'+colour.value+logo.value+'.gif" width = 38%>');
+	}
+	else{}
+}
+var price = 0;
+function addtobasket1(){
+	var colour = document.getElementById("colouroptions");
+	var logo = document.getElementById("logooptions");
+	var item = colour.value+logo.value;
+	var size = document.getElementById("size1");
+	var items = (document.getElementById("itemsholder")).innerHTML;	
+	if((colour.value!='Colour')&&(logo.value!='Logo')){
+		if(logo.value=="divideshirt"){items+=(colour.value+" Divide Shirt Size: "+size.value+", ")}
+		else if(logo.value=="plusshirt"){items+=(colour.value+" Plus Shirt Size: "+size.value+", ")}
+		else if(logo.value=="multiplyshirt"){items+=(colour.value+" Multiply Shirt Size: "+size.value+", ")}
+		$('#itemsholder').html(items);
+		price+=10;
+		$('#price').html('£'+price);
+	}
+	else{alert("Select colour and logo!");}
+}
+
+function addtobasket2(){
+	var colour = document.getElementById("colouroptions2");
+	var logo = document.getElementById("logooptions2");
+	var item = colour.value+logo.value;
+	var items = (document.getElementById("itemsholder")).innerHTML;
+	var size = document.getElementById("size2");
+	if((colour.value!='Colour')&&(logo.value!='Logo')){
+		if(logo.value=="dividehoodie"){items+=(colour.value+" Divide Hoodie Size: "+size.value+", ")}
+		else if(logo.value=="plushoodie"){items+=(colour.value+" Plus Hoodie Size: "+size.value+", ")}
+		else if(logo.value=="multiplyhoodie"){items+=(colour.value+" Multiply Hoodie Size: "+size.value+", ")}
+		$('#itemsholder').html(items);
+		price+=15;
+		$('#price').html('£'+price);
+	}
+	else{alert("Select colour and logo!");}
+}
+
+function addtobasket3(){
+	var colour = document.getElementById("colouroptions3");
+	var logo = document.getElementById("logooptions3");
+	var item = colour.value+logo.value;
+	var items = (document.getElementById("itemsholder")).innerHTML;
+	var size = document.getElementById("size3");
+	if((colour.value!='Colour')&&(logo.value!='Logo')){
+		if(logo.value=="dividehat"){items+=(colour.value+" Divide Hat Size: "+size.value+", ")}
+		else if(logo.value=="plushat"){items+=(colour.value+" Plus Hat Size: "+size.value+", ")}
+		else{items+=(colour.value+" Multiply Hat Size: "+size.value+", ")}
+		$('#itemsholder').html(items);
+		price+=6;
+		$('#price').html('£'+price);
+	}
+	else{alert("Select colour and logo!");}
+}
