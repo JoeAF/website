@@ -9,16 +9,28 @@
   </head>
   <body class = "Clothes">
   <section>
-    <img src = "Assets/dividehoodie.gif" width = 40%>
+    <div id="hoodiesholder"></div>
   	<p><a href = "tshirts.html">T-Shirts</a></p>
 	<p><a href = "hoodies.html">Hoodies</a></p>
 	<p><a href = "hats.html">Hats</a></p>
-	<select>
+	<select id="colouroptions" onchange="changehoodie()";>
 	  <option value="Colour">Colour</option>
-	  <option value="Black">Black</option>
 	  <option value="White">White</option>
+	  <option value="Black">Black</option>
 	  <option value="Red">Red</option>
 	</select>
-  </section>
+	<select id="logooptions" onchange="changehoodie()";>
+	  <option value="Logo">Logo</option>
+	  <option value="dividehoodie">÷</option>
+	  <option value="plushoodie">+</option>
+	  <option value="multiplyhoodie">x</option>
+	</select>
+	<select>
+	  <option value="S">Small</option>
+	  <option value="M">Medium</option>
+	  <option value="plushat">Large</option>
+	</select>
+	<button onclick="addtobasket()">Add To Basket</button>
+	<div id="itemsholder"></div>
   </body>
 </html>
