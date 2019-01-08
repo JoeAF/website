@@ -9,16 +9,29 @@
   </head>
   <body class = "Clothes">
   <section>
-	<img src = "Assets/dividehat.gif" width = 40%>
+    <div id="hatsholder"></div>
     <p><a href = "tshirts.html">T-Shirts</a></p>
 	<p><a href = "hoodies.html">Hoodies</a></p>
 	<p><a href = "hats.html">Hats</a></p>
-	<select>
+	<select id="colouroptions" onchange="changehat()";>
 	  <option value="Colour">Colour</option>
-	  <option value="Black">Black</option>
 	  <option value="White">White</option>
+	  <option value="Black">Black</option>
 	  <option value="Red">Red</option>
 	</select>
+	<select id="logooptions" onchange="changehat()";>
+	  <option value="Logo">Logo</option>
+	  <option value="dividehat">÷</option>
+	  <option value="plushat">+</option>
+	  <option value="multiplyhat">x</option>
+	</select>
+	<select>
+	  <option value="S">Small</option>
+	  <option value="M">Medium</option>
+	  <option value="plushat">Large</option>
+	</select>
+	<button onclick="addtobasket()">Add To Basket</button>
+	<div id="itemsholder"></div>
   </section>
   </body>
 </html>
