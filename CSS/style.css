@@ -24,7 +24,7 @@
 	margin: 5px;
 	background-color:white;
 }
-@media only screen and (min-width: 824px) {
+@media only screen and (min-width: 824px) { /*Media query allows spotify to adjust well for different sizes of the screen*/
 	li{
 		padding-left:30%;
 		text-align:right;
@@ -41,10 +41,6 @@
 	.Spotify{
 		width:49%;
 	}
-}
-header nav{
-	float:right;
-	margin-top:10px;
 }
 .EdHome{
 	width:85%;
@@ -73,13 +69,12 @@ h3{
 font: 21px/1.5 Arial, Helvetica, sans-serif;}
 
 .sticky {
-  position: fixed;
   top: 0;
+  position: fixed;
   width: 100%;
 }
 
-.header {
-  padding: 10px 16px;
-  background: #555;
-  color: #f1f1f1;
+.navbar {
+  padding: 12px 18px;
+  background: #000000;
 }
