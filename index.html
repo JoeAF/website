@@ -8,21 +8,23 @@
 	  <script src="JS/javascript.js"></script>
   </head>
   <body class = "Home">
-  <div class="header" id="myHeader">
-	<a HREF="#Home">Home</a>
-	<a HREF="#Music">Music</a>
-	<a HREF="#Videos">Videos</a>
-	<a HREF="#Merch">Merch</a>
-	<a HREF="#Tours">Tours</a>
-	<a HREF="#About">About</a>
+  <!--Navbar is sticky and takes you to a specific part of the page as a shortcut-->
+  <div class="navbar" id="mynavbar">
+	<a href="#Home">Home</a>
+	<a href="#Music">Music</a>
+	<a href="#Videos">Videos</a>
+	<a href="#Merch">Merch</a>
+	<a href="#Tours">Tours</a>
+	<a href="#About">About</a>
   </div>
   <div class="content">
   <section>
         <div class="EdHome">
-		  <a NAME="Home">
+		  <a name="Home">
           <img src="Assets/Ed.png" alt="Ed Sheeran Image" align="left" width=50%>
 		  <p>Hi I'm Ed Sheeran! I'm a singer songwriter who was born in Halifax. This is a website for you to look at my music, videos, merch, tours and much more! Enjoy!</p>
 		  <ul> 
+			<!--Images contain links to their social media pages-->
 			<li><a href = "https://open.spotify.com/artist/6eUKZXaKkcviH0Ku9w2n3V"><img src="Assets/Spotify.png" alt="Ed Sheeran Image" align="right" width = 10% class = "images" ></a></li>
 			<li><a href = "https://www.youtube.com/user/EdSheeran"><img src="Assets/Youtube.png" alt="Ed Sheeran Image" align="right" width = 10% class = "images"></a></li>
 			<li><a href = "https://twitter.com/edsheeran"> <img src="Assets/Twitter.png" alt="Ed Sheeran Image" align="right" width = 10% class = "images"></a></li>
@@ -30,34 +32,39 @@
 			<li><a href = "https://www.instagram.com/teddysphotos/?hl=en"><img src="Assets/Instagram.png" alt="Ed Sheeran Image" align="right" width = 10% class = "images"></a></li>
 		  </ul>
 		</div>
-		<a NAME="Music">
+		<a name="Music">
 		<h2 align = "right">MUSIC</h2>
+		<!--Embeded spotify playlists-->
 		<iframe src="https://open.spotify.com/embed/album/1xn54DMo2qIqBuMqHtUsFd" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media" class = "Spotify"></iframe>
 		<iframe src="https://open.spotify.com/embed/album/3T4tUhGYeRNVUGevb0wThu" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media" class = "Spotify"></iframe>
 		<iframe src="https://open.spotify.com/embed/album/3QbPtoOWiJqZurXXxJwaOD" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media" class = "Spotify"></iframe>
 		<iframe src="https://open.spotify.com/embed/album/02pi98kE0nra0yBqCStzbC" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media" class = "Spotify"></iframe>
 		<iframe src="https://open.spotify.com/embed/album/6DpIyaMgt5p9HlGd1c0LDM" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media" class = "Spotify"></iframe>
-		<a NAME="Videos">
+		<a name="Videos">
 		<h2>VIDEOS</h2>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/ZOBvRs4btvE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<!--Embeded video-->
+		<iframe width="500" height="290" src="https://www.youtube.com/embed/ZOBvRs4btvE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		<!--Links to latest 9 videos released by Ed which are embed on the a different page-->
 		<p><a href = "videos.html">Latest Videos</a></p>
 		<div>
-		<a NAME="Merch">
+		<a name="Merch">
 		<h2 align="right">MERCH</h2>
-		<a href="tshirts.html"><img src="Assets/hoodie.png" width = 50% alt="Hoodie"></a>
+		<!--When you click on the hoodie, it takes you to the shop-->
+		<a href="shop.html"><img src="Assets/hoodie.png" width = 50% alt="Hoodie"></a>
 		</div>
 		<div>
-		<a NAME="Tours">
+		<a name="Tours">
+		<!--List of tours and more about Ed Sheeran below-->
 		<h1>TOURS</h1>
 		<h3 style = "float:left;">Date: 15/02/19 Location: London <br />Date: 18/02/19 Location: Derby<br />Date: 19/02/19 Location: Nottingham<br />Date: 21/02/19 Location: Lincoln<br />Date: 22/02/19 Location: Leeds<br />Date: 24/02/19 Location: Newcastle<br />Date: 26/02/19 Location: Sunderland <br />Date: 01/01/19 Location: Ipswich <br />Date: 03/02/19 Location: Norwich<br />Date: 05/01/19 Location: Peterborough <br />Date: 07/02/19 Location: Leicester<br />Date: 10/02/19 Location: Birmingham<br />Date: 17/02/19 Location: Dublin<br />Date: 20/02/19 Location: Dundalk<br />Date: 22/02/19 Location: Belfast</h3>
 		<img src="Assets/Performing.jpg" alt="Ed Sheeran Performing" width=50% style = "float:right;">
 		</div>
 		<div>
-		<img src="Assets/divideguitar.gif" alt="Ed Sheeran Guitar" width=40% style = "float:left;">
-		<h2 style = "float:right;">ABOUT</h2>
-		<p style = "float:right;">Edward Christopher Sheeran is a singer, songwriter,<br /> guitarist, record producer, and actor <br /> who was born on the 17th of February in 1991.<br /> He's sold over 100 million singles over the years,<br /> his most sold being "Thinking Out Loud".</p>
+			<img src="Assets/divideguitar.gif" alt="Ed Sheeran Guitar" width=40% style = "float:left;">
+			<h2 style = "float:right;">ABOUT</h2>
+			<p style = "float:right;">Edward Christopher Sheeran is a singer, songwriter,<br /> guitarist, record producer, and actor <br /> who was born on the 17th of February in 1991.<br /> He's sold over 100 million singles over the years,<br /> his most sold being "Thinking Out Loud".</p>
 		</div>
-		<a NAME="About">
+		<a name="About">
   </section>
   </div>
   </body>
