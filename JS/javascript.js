@@ -147,3 +147,15 @@ function addtobasket3(){
 	}
 	else{alert("Select colour and logo!");}
 }
+
+
+window.onscroll = function() {myFunction()};
+function myFunction(header) {
+  var header = document.getElementById("myHeader");
+  var sticky = header.offsetTop;
+  if (window.pageYOffset > sticky) {
+    header.classList.add("sticky");
+  } else {
+    header.classList.remove("sticky");
+  }
+}
