@@ -16,7 +16,6 @@ function Login() {
 	 if(LoggedIn==false){
 		 var inputtedUsername= document.getElementById("LoginUsername");
 		 var inputtedPassword= document.getElementById("LoginPassword");
-		 console.log(inputtedtUsername.value);
 		 //if the username and password you entered matches the one stored in local storage it successfully logs you in
 		 if ((inputtedUsername.value == localStorage.getItem('Username')) && (inputtedPassword.value == localStorage.getItem('Password'))){
 			 LoggedIn = true;
