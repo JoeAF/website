@@ -1,25 +1,25 @@
 .Home{
-	font: 18px/1.5 Arial, Helvetica, sans-serif;
+	font: 18px/1.5 Arial, Helvetica, Georgia;
 	padding:0;
 	margin: 5px;
 	background-color:#add8e6;
 	background-image: linear-gradient(#add8e6,red, orange, yellow, green, #003366);
 }
 .Clothes{
-	font: 18px/1.5 Arial, Helvetica, sans-serif;
+	font: 18px/1.5 Arial, Helvetica, Georgia;
 	padding:0;
 	margin: 5px;
 	background-color:#add8e6;
 }
 .Videos{
-	font: 18px/1.5 Arial, Helvetica, sans-serif;
+	font: 18px/1.5 Arial, Helvetica, Georgia;
 	padding:0;
 	margin: 5px;
 	background-color:#add8e6;
 	background-image: linear-gradient(#add8e6,red, orange, yellow, green, #003366);
 }
 .Login{
-	font: 18px/1.5 Arial, Helvetica, sans-serif;
+	font: 18px/1.5 Arial, Helvetica, Georgia;
 	padding:0;
 	margin: 5px;
 	background-color:white;
@@ -60,13 +60,13 @@ ul.images li{
 	margin: 8%;
 }
 h1{
-font: 30px/1.5 Arial, Helvetica, sans-serif;}
+font: 30px/1.5 Arial, Helvetica, Georgia;}
 
 h2{
-font: 80px/1.5 Arial, Helvetica, sans-serif;}
+font: 80px/1.5 Arial, Helvetica, Georgia;}
 
 h3{
-font: 21px/1.5 Arial, Helvetica, sans-serif;}
+font: 21px/1.5 Arial, Helvetica, Georgia;}
 
 .sticky {
   top: 0;
