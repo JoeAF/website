@@ -88,9 +88,9 @@ function addtobasket1(){ //Adds tshirts to basket
 	var size = document.getElementById("size1");
 	var items = (document.getElementById("itemsholder")).innerHTML;	
 	if((colour.value!='Colour')&&(logo.value!='Logo')){
-		if(logo.value=="divideshirt"){items+=("("+colour.value+")"+" Divide Shirt Size: "+size.value+", ")}
-		else if(logo.value=="plusshirt"){items+=("("+colour.value+")"+" Plus Shirt Size: "+size.value+", ")}
-		else if(logo.value=="multiplyshirt"){items+=("("+colour.value+")"+" Multiply Shirt Size: "+size.value+", ")}
+		if(logo.value=="divideshirt"){items+=(colour.value+" Divide Shirt Size: "+size.value+", ")}
+		else if(logo.value=="plusshirt"){items+=(colour.value+" Plus Shirt Size: "+size.value+", ")}
+		else if(logo.value=="multiplyshirt"){items+=(colour.value+" Multiply Shirt Size: "+size.value+", ")}
 		$('#itemsholder').html(items); //Returns item information to page
 		price+=10;
 		$('#price').html('£'+price); //Returns new price of basket to page
@@ -104,9 +104,9 @@ function addtobasket2(){ //Adds hoodie to basket
 	var items = (document.getElementById("itemsholder")).innerHTML;
 	var size = document.getElementById("size2");
 	if((colour.value!='Colour')&&(logo.value!='Logo')){
-		if(logo.value=="dividehoodie"){items+=("("+colour.value+")"+" Divide Hoodie Size: "+size.value+", ")}
-		else if(logo.value=="plushoodie"){items+=("("+colour.value+")"+" Plus Hoodie Size: "+size.value+", ")}
-		else if(logo.value=="multiplyhoodie"){items+=("("+colour.value+")"+" Multiply Hoodie Size: "+size.value+", ")}
+		if(logo.value=="dividehoodie"){items+=(colour.value+" Divide Hoodie Size: "+size.value+", ")}
+		else if(logo.value=="plushoodie"){items+=(colour.value+" Plus Hoodie Size: "+size.value+", ")}
+		else if(logo.value=="multiplyhoodie"){items+=(colour.value+" Multiply Hoodie Size: "+size.value+", ")}
 		$('#itemsholder').html(items); //Returns item information to page
 		price+=15;
 		$('#price').html('£'+price); //Returns new price of basket to page
@@ -120,9 +120,9 @@ function addtobasket3(){  //Adds hat to basket
 	var items = (document.getElementById("itemsholder")).innerHTML;
 	var size = document.getElementById("size3");
 	if((colour.value!='Colour')&&(logo.value!='Logo')){
-		if(logo.value=="dividehat"){items+=("("+colour.value+")"+" Divide Hat Size: "+size.value+", ")}
-		else if(logo.value=="plushat"){items+=("("+colour.value+")"+" Plus Hat Size: "+size.value+", ")}
-		else{items+=("("+colour.value+")"+" Multiply Hat Size: "+size.value+", ")}
+		if(logo.value=="dividehat"){items+=(colour.value+" Divide Hat Size: "+size.value+", ")}
+		else if(logo.value=="plushat"){items+=(colour.value+" Plus Hat Size: "+size.value+", ")}
+		else{items+=(colour.value+" Multiply Hat Size: "+size.value+", ")}
 		$('#itemsholder').html(items); //Returns item information to page
 		price+=6;
 		$('#price').html('£'+price); //Returns new price of basket to page
